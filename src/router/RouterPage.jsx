@@ -6,7 +6,7 @@ import EditNotes from '../pages/EditNotes'
 
 const RouterPage = () => {
     return (
-        <div>
+        <div id="app">
             <Routes>
                 <Route path="/" element={<Notes/>} />
                 <Route path="/create-note" element={<CreateNote/>} />
