@@ -1,4 +1,6 @@
-🚀 My React notes app is ready! Here's a technical look at some of the key features I developed:
+ # 🚀 My React notes app is ready! 
+
+## Here's a technical look at some of the key features I developed:
 
 **Pages and Routing**: I used React Router to create a Single Page Application (SPA) with multiple routes. The main routes include / for viewing notes, /create-note for creating new notes, and /edit-note/:id for editing existing notes.
 
