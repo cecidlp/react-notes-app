@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom"
 import Notes from '../pages/Notes'
 import CreateNote from '../pages/CreateNote'
 import EditNotes from '../pages/EditNotes'
-/* import dummyNotes from '../dummy_notes' */
 
 
 const RouterPage = () => {
