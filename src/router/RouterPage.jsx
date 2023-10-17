@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom"
 import Notes from '../pages/Notes'
 import CreateNote from '../pages/CreateNote'
 import EditNotes from '../pages/EditNotes'
 /* import dummyNotes from '../dummy_notes' */
-import { useState } from "react";
+
 
 const RouterPage = () => {
-    const [notes, setNotes] = useState([])
-    console.log(notes)
+    const [notes, setNotes] = useState(JSON.parse(localStorage.getItem('notes')) || [])
+
+    useEffect(()=> {
+        localStorage.setItem('notes', JSON.stringify(notes))
+    },[notes])
 
     return (
         <div id="app">
