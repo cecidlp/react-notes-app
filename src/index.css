@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
 
-body, html {
+body,
+html {
     height: 100%;
-  }
+}
 
 * {
     margin: 0;
@@ -19,8 +20,16 @@ body, html {
     --color-bg-dark: #3a3a3a;
     --color-bg-black: #111111;
     --color-white: #fefefe;
-    --color-primary: #7634d8;
-    --color-danger: rgb(249, 84, 84);
+    --color-primary: #865fc0;
+    --color-danger: rgb(250, 103, 103);
+    --note-color-1: #edafb8ff;
+    --note-color-2: #80deea;
+    --note-color-3: #cf93d9;
+    --note-color-4: #e6ee9b;
+    --note-color-5: #81b29a;
+    --note-color-6: #ffab91;
+    --note-color-7: #ffcc80;
+    --note-color-8: #f38fb1;
 }
 
 body {
@@ -29,13 +38,12 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--color-white);
-    background: #ccc;
     line-height: 1.5;
 }
 
 .btn {
     background: var(--color-bg-dark);
-    border-radius: 0.8rem;
+    border-radius: 100%;
     padding: 0.8rem;
     font-size: 1.6rem;
     color: var(--color-white);
@@ -52,10 +60,20 @@ body {
 
 .btn.danger {
     background: var(--color-danger);
+    border-radius: 1rem;
 }
 
 .btn.primary {
     background: var(--color-primary);
+    border-radius: 1rem;
+}
+
+.btn.primary:active{
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.btn.danger:active{
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 .btn:hover {
@@ -64,9 +82,9 @@ body {
 }
 
 #app {
-    background: var(--color-bg-black);
-    height: 48rem;
-    width: 24rem;
+    background: #242424;
+    height: 100vh;
+    width: 100vw;
     padding: 2rem 1.6rem;
     overflow-y: scroll;
     position: relative;
@@ -76,7 +94,8 @@ body {
     display: none;
 }
 
-h2,  h4 {
+h2,
+h4 {
     font-weight: 500;
 }
 
@@ -94,8 +113,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.6rem 1.5rem;
-    background: var(--color-bg-black);
+    padding: 0 0 1.5rem;
     z-index: 9;
 }
 
@@ -132,7 +150,7 @@ h2 {
     gap: 1rem;
     cursor: pointer;
     transition: all 300ms ease;
-    color: var(--color-white);
+    color: var(--color-bg-dark);
 }
 
 .note:hover {
@@ -159,7 +177,7 @@ h2 {
 .btn.add__btn {
     position: fixed;
     bottom: 4rem;
-    right: 7rem;
+    right: 2rem;
     padding: 1rem;
 }
 
@@ -181,7 +199,8 @@ h2 {
     margin-top: 2rem;
 }
 
-.create-note__form input, .create-note__form textarea {
+.create-note__form input,
+.create-note__form textarea {
     width: 100%;
     padding: 0.5rem 1rem;
     background: transparent;
@@ -217,7 +236,6 @@ h2 {
     }
 
     .btn.add__btn {
-        padding: 1.5rem;
         font-size: 1.5rem;
         bottom: 6%;
         right: 2rem;

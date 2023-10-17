@@ -30,7 +30,7 @@ const Notes = ({ notes }) => {
       <div className="notes__container">
         {filteredNotes.length == 0 && <p className='empty-notes'>No notes found</p>}
         {
-          filteredNotes.map(note => <NoteItem key={note.id} note={note} />)
+          filteredNotes.map((note, index) => <NoteItem key={note.id} note={note} index={index} />)
         }
       </div>
       <Link to='/create-note' className='btn add__btn'><BsPlusLg /> </Link>
