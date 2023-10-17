@@ -16,4 +16,4 @@
 
 Hope you enjoy it!
 
-deployed project: mynotes-app-react.netlify.app/
+deployed project: [mynotes-app-react.netlify.app/](https://mynotes-app-react.netlify.app)
