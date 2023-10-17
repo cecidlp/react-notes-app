@@ -15,3 +15,5 @@
 **Note Search**: I added a search function that filters notes based on user-entered keywords. This function uses JavaScript to compare text strings and display relevant results.
 
 Hope you enjoy it!
+
+deployed project: mynotes-app-react.netlify.app/
