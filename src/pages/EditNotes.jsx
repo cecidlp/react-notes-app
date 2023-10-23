@@ -39,8 +39,6 @@ const EditNotes = ({ notes, setNotes }) => {
    }
   }
 
-  console.log(note)
-
   return (
     <section>
       <header className="create-note__header">
